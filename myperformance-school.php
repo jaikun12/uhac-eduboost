@@ -26,14 +26,13 @@
         pieStartAngle: 100,
       };
 
-        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 
         var keywords = google.visualization.arrayToDataTable([
           ['keywords', 'Quantity'],
           ['Project',  72],
           ['Management',  72],
           ['UX', 25],
-          ['Design', 25]
+          ['Analytics', 78]
       
         ]);
 
@@ -44,13 +43,31 @@
         pieStartAngle: 100,
       };
 
+      var jobstaken = google.visualization.arrayToDataTable([
+          ['Job Category', 'Quantity'],
+          ['Project Management',  72],
+          ['Business Analytics',  72],
+          ['Database Management', 56],
+          ['Programming', 35]
+      
+        ]);
+
+      var jobsoptions = {
+        pieSliceText: 'label',
+        title: 'Top Job Categories taken by students',
+        pieStartAngle: 100,
+      };
+
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 
         var keychart = new google.visualization.PieChart(document.getElementById('keywordschart'));
 
+        var jobstakenchart = new google.visualization.PieChart(document.getElementById('jobschart'));
+
 
         chart.draw(data, options);
         keychart.draw(keywords, keywordsoptions);
+        jobstakenchart.draw(jobstaken, jobsoptions);
       }
     </script>
 
@@ -98,6 +115,11 @@
                                           <h4>Career</h4>
                                           <center>
                                                 <div id="keywordschart" style="width: 350px; height: 300px;"></div>
+
+                                                <div id="jobschart" style="width: 350px; height: 300px;"></div>
+
+
+
                                           </center>
 
                                     </div>
