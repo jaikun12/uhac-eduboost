@@ -77,7 +77,7 @@
             <nav>
                   <img class="pull-left logo" style="margin-top:-20px;" src="images/eduboostlogo.png">
                   <ul id="nav-menu" class="list-inline pull-left">
-                        <li><a href="#"><div>MY STUDENTS</div></a></li>
+                        <li><a href="school-dash.php"><div>MY STUDENTS</div></a></li>
                         <li><a href="job-board-school.php"><div>JOB BOARD</div></a></li>
                         <li><a href=""><div class="active">MY PERFORMANCE</div></a></li>
                         <li><a href=""><div>LINKAGES</div></a></li>

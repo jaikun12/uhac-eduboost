@@ -34,13 +34,12 @@
 		<div class="wrapper">
 				<center>
 					<div id="job-board" class="container">
-					<h3 class="pull-left">Job Board</h3>
+					
 					<div class="pull-left sub-nav">
-					<div class="pull-left">
-
-					<a href="job-board-school.php"><h4 class="pull-left">Approved &nbsp;</h4></a>
-					<h4 class="pull-left">|</h4>
-					<a href="#"><h4 class="pull-left active-page">&nbsp;For Approval</h4>
+					<h3 class="pull-left">Job Board</h3>
+					<a href="job-board-school.php"><h4 class="pull-left" style="margin-left:40px;margin-top:20px;">Approved &nbsp;</h4></a>
+					<h4 class="pull-left" style="margin-top:20px;">|</h4>
+					<a href="#"><h4 class="pull-left active-page " style="margin-top:20px;">&nbsp;For Approval</h4>
 					</a></div>
 					<form>
 						<input id="search-bar" type="text" class="underline-input pull-right" style="margin-top:20px; margin-bottom:20px;" placeholder="Search...">
