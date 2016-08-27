@@ -35,11 +35,9 @@
 				<center>
 					<div id="job-board" class="container">
 					<h3 class="pull-left">Job Board</h3>
-<<<<<<< HEAD
 					<div class="pull-left sub-nav">
-=======
 					<div class="pull-left">
->>>>>>> 4a9a2c0df1145ce52a7395a1b821616af4ffccf8
+
 					<a href="job-board-school.php"><h4 class="pull-left">Approved &nbsp;</h4></a>
 					<h4 class="pull-left">|</h4>
 					<a href="#"><h4 class="pull-left active-page">&nbsp;For Approval</h4>
