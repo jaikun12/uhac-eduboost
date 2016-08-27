@@ -11,9 +11,15 @@
 		</video>
 
 		<nav>
-			<h2 class="pull-left">EduBoost</h2>
-			<button class="hollow-btn">LOGIN</button>
+			<img src="images/eduboostlogowhite.png" class="logo pull-left">
+			<button class="hollow-btn" style="margin-top:20px;">LOGIN</button>
 		</nav>
+
+		<center>
+			<div id="intro" class="container">
+				<h1>Bridging the gap between <a href="initview-student.php">students</a>, <a href="school-dash.php">universities</a>, and <a href="company-dash.php">employers</a>.</h1>
+			</div>
+		</center>
 
 		<script src="bootstrap.min.js"></script>
 		<script src="js/jquery-2.2.0.min.js"></script>

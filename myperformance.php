@@ -76,7 +76,7 @@
 					<p class="pull-right">Welcome, Chatur!</p>
 				</li>
 				<li>
-					<p class="pull-right"><a href="" class="hollow">Logout</a></p>
+					<p class="pull-right"><a href="index.php" class="hollow">Logout</a></p>
 				</li>
 			</ul>
 		</nav>
