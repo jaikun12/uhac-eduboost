@@ -46,15 +46,33 @@
 
 					</form>
 						<ul id="job-list" class="list-unstyled">
-							<?php 	
-								$query = mysql_query("SELECT * FROM jobs_table WHERE jobcategory = 'Programming' or jobcategory = 'Project Management';");
+						<?php
+							$query = mysql_query("SELECT * FROM jobs_table WHERE jobcategory = 'Programming' or jobcategory = 'Project Management';");
 								while ($jobs_table = mysql_fetch_array($query)){
+									$jobid = $jobs_table['jobid'];
 									$jobname = $jobs_table['jobname'];
 									$jobcategory = $jobs_table['jobcategory'];
 									$jobrole = $jobs_table['jobrole'];
 									$company = $jobs_table['company'];
 									$jobshortdesc = $jobs_table['jobshortdesc'];
-								echo '
+								echo '<a class="btn btn-primary" data-toggle="modal" href="#'. $jobid .'modal-id">Trigger modal</a>
+								<div class="modal fade" id="'.$jobid.'">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+												<h4 class="modal-title">Modal title</h4>
+											</div>
+											<div class="modal-body">
+												
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-primary">Save changes</button>
+											</div>
+										</div>
+									</div>
+								</div>
 									<li><a href="">
 									<div class="container-fluid job-item">
 									<div class="col-md-3">
@@ -62,12 +80,9 @@
 									<h4 class="clear-both sm-font job-category">' . $jobrole . '
 									</h4>
 									</div>
+									
 
-									<div class="col-md-1">
-									<img src="images/thumbs-up.png" style="height:30px; width:26px;">
-									</div>
-
-									<div class="col-md-5">
+									<div class="col-md-6">
 									<p class="pull-left job-short-description">' . $jobname .'</p>
 									</div>
 
@@ -78,8 +93,11 @@
 									</div></a>
 									</li>';
 								}
-
-
+						?>
+						</ul>
+						<ul id="job-list" class="list-unstyled">
+							<?php 	
+					
 									$query = mysql_query("SELECT * FROM jobs_table ORDER BY jobcategory ASC;");
 
 									while ($jobs_table = mysql_fetch_array($query)){

@@ -42,6 +42,9 @@
 						<input id="search-bar" type="text" class="underline-input pull-right" style="margin-top:20px;" placeholder="Search...">
 
 					</form>
+					<br><br><hr>
+					<h5 style="margin:-12px 0 -8px 0;text-align:left;color:#EC9A1A">Completed Jobs</h5>
+					<hr>
 						<ul id="job-list" class="list-unstyled">
 							<?php 
 
@@ -50,7 +53,7 @@
 									while ($completedjobs_table = mysql_fetch_array($completedjobs_table_query)){
 										$jobid = $completedjobs_table['jobid'];
 										$success_rating = $completedjobs_table['success_rating'];
-										$coj_timetable = $completedjobs_table['coj_timestamp'];
+										$coj_timestamp = $completedjobs_table['coj_timestamp'];
 
 										$jobs_table_query = mysql_query("SELECT * FROM jobs_table WHERE jobid = $jobid;");
 									// start of while for fetching job table
@@ -67,12 +70,55 @@
 									<div class="container-fluid job-item">
 									<div class="col-md-3">
 									<h4 class="pull-left">' . $jobcategory .'</h4>
-									<h4 class="clear-both sm-font job-category">Rating: ' . $success_rating . '
-									</h4>
+									<h4 class="clear-both sm-font job-category">Rating: ';
+
+									if ($success_rating == 1){
+										 echo '<ul class="list-inline">
+										 <li><span class="glyphicon glyphicon-star"></span></li>
+										 <li></li>
+										 <li></li>
+										 <li></li>
+										 <li></li>';
+									}
+									elseif ($success_rating == 2){
+										 echo '<ul class="list-inline">
+										 <li><span class="glyphicon glyphicon-star"></span></li>
+										 <li><span class="glyphicon glyphicon-star"></span></li>
+										 <li></li>
+										 <li></li>
+										 <li></li>';
+									}
+									elseif ($success_rating == 3){
+										 echo '<ul class="list-inline">
+										 <li><span class="glyphicon glyphicon-star"></span></li>
+										 <li><span class="glyphicon glyphicon-star"></span></li>
+										 <li><span class="glyphicon glyphicon-star"></span></li>
+										 <li></li>
+										 <li></li>';
+									}
+									elseif ($success_rating == 4){
+										 echo '<ul class="list-inline">
+										 <li><span class="glyphicon glyphicon-star"></span></li>
+										 <li><span class="glyphicon glyphicon-star"></span></li>
+										 <li><span class="glyphicon glyphicon-star"></span></li>
+										 <li><span class="glyphicon glyphicon-star"></span></li>
+										 <li></li>';
+									}
+									else{
+										 echo '<ul class="list-inline">
+										 <li><span class="glyphicon glyphicon-star"></span></li>
+										 <li><span class="glyphicon glyphicon-star"></span></li>
+										 <li><span class="glyphicon glyphicon-star"></span></li>
+										 <li><span class="glyphicon glyphicon-star"></span></li>
+										 <li><span class="glyphicon glyphicon-star"></span></li>';
+									}
+								}
+
+									echo '</h4>
 									</div>
 
 									<div class="col-md-6">
-									<p class="pull-left job-short-description">' . $jobname .'</p>
+									<p class="pull-left job-short-description">' . $coj_timestamp .'</p>
 									</div>
 
 									<div class="col-md-3">
@@ -81,68 +127,54 @@
 									</div>	
 									</div></a>
 									</li>';
-										}
+										
 										// end fetch of table
+									}
+							?>
+					<h5 style="margin:12px 0 -8px 0;text-align:left;color:red">Cancelled Jobs</h5>
+					<hr>
+					<?php
+
+									$cancelledjobs_table_query = mysql_query("SELECT * FROM cancelledjobs_table WHERE userid = 1;");
+
+									while ($cancelledjobs_table = mysql_fetch_array($cancelledjobs_table_query)){
+										$jobid = $cancelledjobs_table['jobid'];
+										$per_completed = $cancelledjobs_table['per_completed'];
+										$caj_timestamp = $cancelledjobs_table['caj_timestamp'];
+
+										$jobs_table_query = mysql_query("SELECT * FROM jobs_table WHERE jobid = $jobid;");
+									// start of while for fetching job table
+										while ($result = mysql_fetch_array($jobs_table_query)){
+										
+										$jobname = $result['jobname'];
+										$jobcategory = $result['jobcategory'];
+										$jobrole = $result['jobrole'];
+										$company = $result['company'];
+										$jobshortdesc = $result['jobshortdesc'];
+
+										echo '
+									<li><a href="">
+									<div class="container-fluid job-item">
+									<div class="col-md-3">
+									<h4 class="pull-left">' . $jobcategory .'</h4>
+									<h4 class="clear-both sm-font job-category">Percentage Completed: ' . ($per_completed*100) .'%</h4>
+									</div>
+
+									<div class="col-md-6">
+									<p class="pull-left job-short-description">' . $caj_timestamp .'</p>
+									</div>
+
+									<div class="col-md-3">
+									<img src="images/ubanklogo.png" class="comp-logo">
+
+									</div>	
+									</div></a>
+									</li>';
+
+										}
 									}
 
 							?>
-
-							<!--li><a href="">
-								<div class="container-fluid job-item">
-									<div class="col-md-3">
-									<h4 class="pull-left">Revamp design of Unionbank Website</h4>
-									<h4 class="clear-both sm-font job-category">Category: UX/UI Designing</h4>
-									</div>
-
-									<div class="col-md-6">
-									<p class="pull-left job-short-description">Enhance the aesthetics of the Unionbank website to attract more customers. </p>
-									</div>
-
-									<div class="col-md-3">
-									<img src="images/ubanklogo.png" class="comp-logo">
-
-									</div>
-									
-								</div></a>
-							</li>
-
-							<li><a href="">
-								<div class="container-fluid job-item">
-									<div class="col-md-3">
-									<h4 class="pull-left">Create business continuity plan</h4>
-									<h4 class="clear-both sm-font job-category">Category: Project Management</h4>
-									</div>
-
-									<div class="col-md-6">
-									<p class="pull-left job-short-description">Perform QA testing on the unionbank website.</p>
-									</div>
-
-									<div class="col-md-3">
-									<img src="images/ubanklogo.png" class="comp-logo">
-
-									</div>
-									
-								</div></a>
-							</li>
-
-							<li><a href="">
-								<div class="container-fluid job-item">
-									<div class="col-md-3">
-									<h4 class="pull-left">Create business continuity plan</h4>
-									<h4 class="clear-both sm-font job-category">Category: Project Management</h4>
-									</div>
-
-									<div class="col-md-6">
-									<p class="pull-left job-short-description">Perform QA testing on the unionbank website.</p>
-									</div>
-
-									<div class="col-md-3">
-									<img src="images/ibmlogo.jpg" class="comp-logo">
-
-									</div>
-									
-								</div></a>
-							</li-->
 
 						</ul>
 					</div>
