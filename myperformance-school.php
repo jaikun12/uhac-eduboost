@@ -107,7 +107,9 @@
                                           <h4>Students' Performance</h4>
                                           <center>
                                                 <div id="piechart" style="width: 350px; height: 300px;"></div>
-
+                                                <div>
+                                                      <h4 class="">Completion Rate: 81.75%</h4>
+                                                </div>
                                           </center>
                                     </div>
 
@@ -118,8 +120,13 @@
 
                                                 <div id="jobschart" style="width: 350px; height: 300px;"></div>
 
-
-
+                                                <div>
+                                                      <ul style="text-align:left;">
+                                                      <h4 class="">Feasible Specialization Tracks:</h4>
+                                                      <li>Project Management</li>
+                                                      <li>Business analytics</li>
+                                                      </ul>
+                                                </div>
                                           </center>
 
                                     </div>
@@ -127,7 +134,13 @@
                                     <div class="col-md-4 sub-section">
                                           <h4>Where can you improve on?</h4>
                                           <center>
-                                                
+                                                <ul id="suggestion-list" class="list-unstyled">
+                                                      <li>Most cancelled projects are on the programming category.</li>
+
+                                                      <li>Students are capable of performing data science tasks. Consider creating a track surrounding that industry.</li>
+
+                                                      
+                                                </ul>
                                           </center>
 
                                     </div>

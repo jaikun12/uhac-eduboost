@@ -30,7 +30,7 @@ CREATE TABLE `cancelledjobs_table` (
   `userid` int(15) DEFAULT NULL,
   `jobid` int(15) DEFAULT NULL,
   `per_completed` float DEFAULT NULL,
-  `caj_timestamp` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP
+  `caj_timestamp` timestamp(6) NOT NULL
 ) ;
 
 --
@@ -71,7 +71,7 @@ CREATE TABLE `completedjobs_table` (
   `userid` int(15) DEFAULT NULL,
   `jobid` int(15) DEFAULT NULL,
   `success_rating` float DEFAULT NULL,
-  `coj_timestamp` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP
+  `coj_timestamp` timestamp(6) NOT NULL
 ) ;
 
 --

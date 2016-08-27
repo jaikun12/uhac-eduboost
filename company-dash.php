@@ -10,8 +10,8 @@
 		<nav>
 			<img class="pull-left logo" style="margin-top:-20px;" src="images/eduboostlogo.png">
 			<ul id="nav-menu" class="list-inline pull-left">
-				<li><a href="initview-student.php"><div>JOB BOARD</div></a></li>
-				<li><a href="myjobs-student.php"><div class="active">MY JOBS</div></a></li>
+				<li><a href="#"><div class="active">JOB BOARD</div></a></li>
+				<li><a href="myjobs-student.php"><div>MY JOBS</div></a></li>
 				<li><a href="myperformance.php"><div>MY PERFORMANCE</div></a></li>
 				<li><a href="mycompanies-student.php"><div>COMPANIES</div></a></li>
 			</ul>
@@ -45,29 +45,21 @@
 						<ul id="job-list" class="list-unstyled">
 							<?php 
 
-									$completedjobs_table_query = mysql_query("SELECT * FROM completedjobs_table WHERE userid = 1;");
+									$query = mysql_query("SELECT * FROM jobs_table;");
 
-									while ($completedjobs_table = mysql_fetch_array($completedjobs_table_query)){
-										$jobid = $completedjobs_table['jobid'];
-										$success_rating = $completedjobs_table['success_rating'];
-										$coj_timetable = $completedjobs_table['coj_timestamp'];
-
-										$jobs_table_query = mysql_query("SELECT * FROM jobs_table WHERE jobid = $jobid;");
-									// start of while for fetching job table
-										while ($result = mysql_fetch_array($jobs_table_query)){
-										
-										$jobname = $result['jobname'];
-										$jobcategory = $result['jobcategory'];
-										$jobrole = $result['jobrole'];
-										$company = $result['company'];
-										$jobshortdesc = $result['jobshortdesc'];
+									while ($jobs_table = mysql_fetch_array($query)){
+										$jobname = $jobs_table['jobname'];
+										$jobcategory = $jobs_table['jobcategory'];
+										$jobrole = $jobs_table['jobrole'];
+										$company = $jobs_table['company'];
+										$jobshortdesc = $jobs_table['jobshortdesc'];
 
 									echo '
 									<li><a href="">
 									<div class="container-fluid job-item">
 									<div class="col-md-3">
 									<h4 class="pull-left">' . $jobcategory .'</h4>
-									<h4 class="clear-both sm-font job-category">Rating: ' . $success_rating . '
+									<h4 class="clear-both sm-font job-category">' . $jobrole . '
 									</h4>
 									</div>
 
@@ -81,10 +73,7 @@
 									</div>	
 									</div></a>
 									</li>';
-										}
-										// end fetch of table
 									}
-
 							?>
 
 							<!--li><a href="">
