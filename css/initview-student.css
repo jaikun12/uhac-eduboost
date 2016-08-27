@@ -9,6 +9,7 @@
 #job-board{
 	border-top:solid #747373 1px;
 	margin:0 auto;
+	margin-top:75px;
 }
 
 #job-list{
@@ -25,4 +26,30 @@
 	width:100%;
 	height:75px;
 	border:solid black 1px;
+}
+
+.job-short-description{
+	margin-left:50px;
+	margin-top:10px;
+
+}
+
+.clear-both{
+	clear:both;
+	float:left;
+}
+
+.sm-font{
+	font-size:14px;
+}
+
+.comp-logo{
+	max-width:200px;
+	max-height:75px;
+	margin-top:10px;
+	float:right;
+}
+
+.job-category{
+	margin-top:-10px;
 }

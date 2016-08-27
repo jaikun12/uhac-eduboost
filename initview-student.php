@@ -8,8 +8,12 @@
 	</head>
 	<body>
 		<nav>
-			
-			
+			<h3 class="pull-left" style="margin:0;">Place logo here</h3>
+			<ul id="nav-menu" class="list-inline pull-left">
+				<li><a href=""><div>JOB BOARD</div></a></li>
+				<li><a href=""><div>MY JOBS</div></a></li>
+				<li><a href=""><div>MY PERFORMANCE</div></a></li>
+			</ul>
 		</nav>
 			<div class="wrapper">
 				<center>
@@ -23,7 +27,27 @@
 							<li>
 								<div class="container-fluid job-item">
 									<h4 class="pull-left">Sample Job Name</h4>
-									<h4>Category:</h4>
+									<p class="pull-left job-short-description">Short Description in here</p>
+									<img src="images/ubanklogo.png" class="comp-logo">
+									<h4 class="clear-both sm-font job-category">Category:</h4>
+								</div>
+							</li>
+
+							<li>
+								<div class="container-fluid job-item">
+									<h4 class="pull-left">Sample Job Name</h4>
+									<p class="pull-left job-short-description">Short Description in here</p>
+									<img src="images/ubanklogo.png" class="comp-logo">
+									<h4 class="clear-both sm-font job-category">Category:</h4>
+								</div>
+							</li>
+
+							<li>
+								<div class="container-fluid job-item">
+									<h4 class="pull-left">Sample Job Name</h4>
+									<p class="pull-left job-short-description">Short Description in here</p>
+									<img src="images/ubanklogo.png" class="comp-logo">
+									<h4 class="clear-both sm-font job-category">Category:</h4>
 								</div>
 							</li>
 
