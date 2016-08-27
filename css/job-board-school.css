@@ -1,0 +1,16 @@
+.active-page{
+	color:#EC9A1A;
+}
+
+#job-board a{
+	text-decoration:none;
+	color:black;
+	-o-transition:.2s;
+  	-ms-transition:.2s;
+  	-moz-transition:.2s;
+  	-webkit-transition:.2s;
+}
+
+#job-board a:hover{
+	color:orange;
+}

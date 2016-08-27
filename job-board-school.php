@@ -2,39 +2,47 @@
 <html>
 	<head>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand|Roboto" rel="stylesheet"> 
+		<script src="https://use.fontawesome.com/5d707990f5.js"></script>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link type="text/css" rel="stylesheet" href="css/nav-student.css">
 		<link type="text/css" rel="stylesheet" href="css/initview-student.css">
+		<link type="text/css" rel="stylesheet" href="css/job-board-school.css">
 	</head>
 	<body>
 		<nav>
 			<img class="pull-left logo" style="margin-top:-20px;" src="images/eduboostlogo.png">
 			<ul id="nav-menu" class="list-inline pull-left">
+				<li><a href="schoool-dash.php"><div>MY STUDENTS</div></a></li>
 				<li><a href="#"><div class="active">JOB BOARD</div></a></li>
-				<li><a href=""><div>MY JOBS</div></a></li>
-				<li><a href="myperformance.php"><div>MY PERFORMANCE</div></a></li>
-				<li><a href=""><div>COMPANIES</div></a></li>
+				<li><a href=""><div>MY PERFORMANCE</div></a></li>
+				<li><a href=""><div>LINKAGES</div></a></li>
 			</ul>
 			
 			<ul class="list-inline pull-right">
 				<li>
-					<img class="img-circle profiledp" src="images/dp.jpg">
+					<img class="img-circle profiledp" src="images/ustlogo.png">
 				</li>
 				<li>
-					<p class="pull-right">Welcome, Chatur!</p>
+					<p class="pull-right">Welcome, University of Santo Tomas!</p>
 				</li>
 				<li>
 					<p class="pull-right"><a href="" class="hollow">Logout</a></p>
 				</li>
 			</ul>
 		</nav>
-			<div class="wrapper">
+		
+		<div class="wrapper">
 				<center>
 					<div id="job-board" class="container">
 					<h3 class="pull-left">Job Board</h3>
+					<div class="pull-left">
+					<a href="#"><h4 class="pull-left active-page">Approved &nbsp;</h4></a>
+					<h4 class="pull-left">|</h4>
+					<a href="job-board-school-approval.php"><h4 class="pull-left">&nbsp;For Approval</h4>
+					</a>
 					<form>
-						<input id="search-bar" type="text" class="underline-input pull-right" style="margin-top:20px;" placeholder="Search...">
-
+						<input id="search-bar" type="text" class="underline-input pull-right" style="margin-top:20px; margin-bottom:20px;" placeholder="Search...">
+						
 					</form>
 						<ul id="job-list" class="list-unstyled">
 							<li><a href="">
@@ -117,6 +125,7 @@
 					</div>
 				</center>
 			</div>
+
 
 		<script src="bootstrap.min.js"></script>
 		<script src="js/jquery-2.2.0.min.js"></script>
