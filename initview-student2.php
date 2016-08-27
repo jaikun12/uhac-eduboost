@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand|Roboto" rel="stylesheet"> 
+		<script src="https://use.fontawesome.com/5d707990f5.js"></script>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link type="text/css" rel="stylesheet" href="css/nav-student.css">
 		<link type="text/css" rel="stylesheet" href="css/initview-student.css">
@@ -18,7 +19,7 @@
 			
 			<ul class="list-inline pull-right">
 				<li>
-					<a href="initview-student2.php">
+					<a href="initview-student.php">
 					<img class="img-circle profiledp" src="images/dp.jpg">
 					</a>
 				</li>
@@ -45,9 +46,41 @@
 
 					</form>
 						<ul id="job-list" class="list-unstyled">
-							<?php 
+							<?php 	
+								$query = mysql_query("SELECT * FROM jobs_table WHERE jobcategory = 'Programming' or jobcategory = 'Project Management';");
+								while ($jobs_table = mysql_fetch_array($query)){
+									$jobname = $jobs_table['jobname'];
+									$jobcategory = $jobs_table['jobcategory'];
+									$jobrole = $jobs_table['jobrole'];
+									$company = $jobs_table['company'];
+									$jobshortdesc = $jobs_table['jobshortdesc'];
+								echo '
+									<li><a href="">
+									<div class="container-fluid job-item">
+									<div class="col-md-3">
+									<h4 class="pull-left">' . $jobcategory .'</h4>
+									<h4 class="clear-both sm-font job-category">' . $jobrole . '
+									</h4>
+									</div>
 
-									$query = mysql_query("SELECT * FROM jobs_table ORDER BY jobcategory ;");
+									<div class="col-md-1">
+									<img src="images/thumbs-up.png" style="height:30px; width:26px;">
+									</div>
+
+									<div class="col-md-5">
+									<p class="pull-left job-short-description">' . $jobname .'</p>
+									</div>
+
+									<div class="col-md-3">
+									<img src="images/ubanklogo.png" class="comp-logo">
+
+									</div>	
+									</div></a>
+									</li>';
+								}
+
+
+									$query = mysql_query("SELECT * FROM jobs_table ORDER BY jobcategory ASC;");
 
 									while ($jobs_table = mysql_fetch_array($query)){
 										$jobname = $jobs_table['jobname'];
