@@ -1,0 +1,17 @@
+'Re-design the company website' 'Programming' ' Front-End Designer' 'Jolibee'
+
+'Make a logo based on the given criteria' 'Graphic Design' 'Graphic Designer' 'Birenear'
+
+'Make an analysis and give your recommendations regarding the given data set' 'Business Analytics' 'Business Analyst' 'PointWest'
+
+'Create an Entity Relationship Diagram for the proposed project' 'Project Management' 'Database Analyst' 'Buylinear'
+
+'Cleanse the given database' 'Database Management' 'Database Administrator' 'IBM'
+
+'Test the given application and document your insights and recommendations' 'Quality Management' 'QA Testing' 'Nestle'
+
+'Create a blueprint' 'Architecture' 'Architect' 'Chooks2Go'
+
+'Transform the following excel files to .csv format' 'Data Management' 'ETL Specialist' 'PointVest'
+
+'Create a PR video for our upcoming event' 'Media Management' 'Video Editting' 'Wammu'
