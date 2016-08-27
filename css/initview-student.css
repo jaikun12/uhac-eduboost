@@ -84,3 +84,8 @@
 .job-category{
 	margin-top:-10px;
 }
+
+.sub-nav{
+	clear:both;
+	float:left
+}
