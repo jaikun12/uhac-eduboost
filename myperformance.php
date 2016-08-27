@@ -24,8 +24,36 @@
        		 };
 		
        		 var jobperfchart = new google.visualization.PieChart(document.getElementById('jobperfchart'));
+
+       		 var keywords = google.visualization.arrayToDataTable([
+       		   ['Keyword', 'Times Searched'],
+       		   ['UX',     11],
+       		   ['design',      11],
+       		   ['testing',  2],
+       		 ]);
+		
+       		 var keywordsops = {
+       		   title: 'Searches Summary'
+       		 };
+		
+       		 var keywordchart = new google.visualization.PieChart(document.getElementById('keywordschart'));
+
+       		 var jobscat = google.visualization.arrayToDataTable([
+       		   ['Category', 'Times Completed'],
+       		   ['Programming',     11],
+       		   ['Project Management',      5],
+       		   ['Testing',  2],
+       		 ]);
+		
+       		 var jobscatops = {
+       		   title: 'Job Completion Summary'
+       		 };
+		
+       		 var jobscatchart = new google.visualization.PieChart(document.getElementById('jobscatchart'));
 		
        		 jobperfchart.draw(jobperf, jobperfops);
+       		 keywordchart.draw(keywords, keywordsops);
+       		 jobscatchart.draw(jobscat, jobscatops);
      		 }
     	</script>
 
@@ -34,9 +62,9 @@
 		<nav>
 			<h3 class="pull-left" style="margin:0;">Place logo here</h3>
 			<ul id="nav-menu" class="list-inline pull-left">
-				<li><a href=""><div>JOB BOARD</div></a></li>
+				<li><a href="initview-student.php"><div>JOB BOARD</div></a></li>
 				<li><a href=""><div>MY JOBS</div></a></li>
-				<li><a href=""><div>MY PERFORMANCE</div></a></li>
+				<li><a href="#"><div class="active">MY PERFORMANCE</div></a></li>
 				<li><a href=""><div>COMPANIES</div></a></li>
 			</ul>
 			
@@ -64,12 +92,23 @@
 							<h4>Job Performance</h4>
 							<center>
 								<div id="jobperfchart" style="width: 350px; height: 300px;"></div>
-								<div class="container">
-									<h4>Average Rating: </h4>
-									<i class="fa fa-star pull-left" aria-hidden="true"></i>
-									<i class="fa fa-star pull-left" aria-hidden="true"></i>
-									<i class="fa fa-star pull-left" aria-hidden="true"></i>
-									<i class="fa fa-star pull-left" aria-hidden="true"></i>
+								<div>
+									<ul class="list-inline">
+										<li>
+											<h4 class="pull-left">Average Rating: </h4>
+										</li>
+										<li>
+											<i class="fa fa-star pull-left rating-star" aria-hidden="true"></i>
+										</li>
+										<li>
+											<i class="fa fa-star pull-left rating-star" aria-hidden="true"></i>
+										</li>
+										<li>
+											<i class="fa fa-star pull-left rating-star" aria-hidden="true"></i>
+										</li>
+										<li>
+											<i class="fa fa-star pull-left rating-star" aria-hidden="true"></i>
+										</li>
 
 								</div>
 							</center>
@@ -78,7 +117,12 @@
 						<div class="col-md-4 sub-section">
 							<h4>Career</h4>
 							<center>
-								
+								<div id="keywordschart" style="width: 350px; height: 300px;"></div>
+
+								<div id="jobscatchart" style="width: 350px; height: 300px;"></div>			
+
+								<div>
+									<h5>Projected Career Path: UX Designer/Developer</h5>	
 
 							</center>
 
@@ -87,8 +131,13 @@
 						<div class="col-md-4 sub-section">
 							<h4>Where can you improve on?</h4>
 							<center>
-								
+								<ul id="suggestion-list" class="list-unstyled">
+									<li>Take on more back-end developer roles to proceed into being a full-stack developer</li>
 
+									<li>Take on more back-end developer roles to proceed into being a full-stack developer</li>
+
+									<li>Take on more back-end developer roles to proceed into being a full-stack developer</li>
+								</ul>
 							</center>
 
 						</div>

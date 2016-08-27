@@ -22,6 +22,15 @@
 	border-bottom:none;
 	border-right:none;
 	overflow-y:auto;
+	opacity:.5;
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+}
+
+.sub-section:hover{
+	opacity:1;
 }
 
 
@@ -37,4 +46,23 @@
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+.rating-star{
+	margin-top:-25px;
+}
+
+#suggestion-list li{
+	padding:10px;
+	border-bottom:solid #B0AEAE 1px;
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	min-height:100px;
+}
+
+#suggestion-list li:hover{
+	border-bottom:solid white 1px;
+	color:#EC9A1A;
 }
