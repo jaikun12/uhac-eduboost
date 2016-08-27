@@ -36,7 +36,7 @@
 					<div id="job-board" class="container">
 					<h3 class="pull-left">Job Board</h3>
 					<div class="pull-left">
-					<a href="#"><h4 class="pull-left">Approved &nbsp;</h4></a>
+					<a href="job-board-school.php"><h4 class="pull-left">Approved &nbsp;</h4></a>
 					<h4 class="pull-left">|</h4>
 					<a href="job-board-school-approval.php"><h4 class="pull-left active-page">&nbsp;For Approval</h4>
 					</a>
@@ -70,9 +70,6 @@
 
 									<div class="col-md-3">
 									<img src="images/ubanklogo.png" class="comp-logo">
-									<p class="job-short-description" style="color: #9A9A9A">'
-									. $company . 
-									'</p>
 									</div>	
 									</div></a>
 									</li>';
