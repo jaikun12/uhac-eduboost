@@ -42,51 +42,42 @@
 					</a>
 					<form>
 						<input id="search-bar" type="text" class="underline-input pull-right" style="margin-top:20px; margin-bottom:20px;" placeholder="Search...">
-						
 					</form>
 						<ul id="job-list" class="list-unstyled">
-							<li><a href="">
-								<div class="container-fluid job-item">
+						<?php
+							include("php/dbconnect.php");
+
+							$query = mysql_query("SELECT * FROM jobs_table;");
+
+							while ($jobs_table = mysql_fetch_array($query)){
+								$jobname = $jobs_table['jobname'];
+								$jobcategory = $jobs_table['jobcategory'];
+								$jobrole = $jobs_table['jobrole'];
+								$company = $jobs_table['company'];
+								$jobshortdesc = $jobs_table['jobshortdesc'];
+
+							echo '<li><a href="">
+									<div class="container-fluid job-item">
 									<div class="col-md-3">
-									<h4 class="pull-left">QA test existing software</h4>
-									<h4 class="clear-both sm-font job-category">Category: Quality Assurance Testing</h4>
+									<h4 class="pull-left">' . $jobcategory .'</h4>
+									<h4 class="clear-both sm-font job-category">' . $jobrole . '
+									</h4>
 									</div>
 
 									<div class="col-md-6">
-									<p class="pull-left job-short-description">Perform QA testing on the Unionbank website.</p>
+									<p class="pull-left job-short-description">' . $jobname .'</p>
 									</div>
 
 									<div class="col-md-3">
-									<img src="images/ibmlogo.jpg" class="comp-logo">
-
-									</div>
-									
-								</div></a>
-							</li>
-
-							<li><a href="">
-								<div class="container-fluid job-item">
-									<div class="col-md-3">
-									<h4 class="pull-left">Revamp design of Unionbank Website</h4>
-									<h4 class="clear-both sm-font job-category">Category: UX/UI Designing</h4>
-									</div>
-
-									<div class="col-md-6">
-									<p class="pull-left job-short-description">Enhance the aesthetics of the Unionbank website to attract more customers. </p>
-									</div>
-
-									<div class="col-md-3">
-									<img src="images/ibmlogo.jpg" class="comp-logo">
-
-									</div>
-									
-								</div></a>
-							</li>
-
-							
-
-							
-
+									<img src="images/ubanklogo.png" class="comp-logo">
+									<p class="job-short-description" style="color: #9A9A9A">'
+									. $company . 
+									'</p>
+									</div>	
+									</div></a>
+									</li>';
+									};
+						?>
 						</ul>
 					</div>
 				</center>
