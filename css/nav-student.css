@@ -5,5 +5,59 @@
 nav{
 	padding:20px;
 	height:75px;
-	border:solid black 2px;
+	border-bottom:solid #C0C0C0 1px;
+}
+
+#nav-menu{
+	margin-left:50px;
+	margin-top:0px;
+}
+
+#nav-menu li a div{
+	height:40px;
+	vertical-align:center;
+	padding-top:10px;
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	border-bottom:solid white 5px;
+}
+
+#nav-menu li a div:hover{
+	border-bottom:solid #EC9A1A 5px;
+	color:#EC9A1A;
+}
+
+#nav-menu li a{
+	text-decoration:none;
+	color:black;
+}
+
+#nav-menu li a:hover{
+	text-decoration:none;
+}
+
+.profiledp{
+	height:40px;
+	width:40px;
+	float:right;
+}
+
+.hollow{
+	border:solid white 1px;
+	padding:5px;
+	text-decoration:none;
+	color:black;
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+
+}
+
+.hollow:hover{
+	border:solid #EC9A1A 1px;
+	text-decoration:none;
+	color:#EC9A1A;
 }
