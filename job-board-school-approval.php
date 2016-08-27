@@ -14,7 +14,7 @@
 			<ul id="nav-menu" class="list-inline pull-left">
 				<li><a href="school-dash.php"><div>MY STUDENTS</div></a></li>
 				<li><a href="#"><div class="active">JOB BOARD</div></a></li>
-				<li><a href=""><div>MY PERFORMANCE</div></a></li>
+				<li><a href="myperformance-school.php"><div>MY PERFORMANCE</div></a></li>
 				<li><a href=""><div>LINKAGES</div></a></li>
 			</ul>
 			
@@ -35,11 +35,11 @@
 				<center>
 					<div id="job-board" class="container">
 					<h3 class="pull-left">Job Board</h3>
-					<div class="pull-left">
-					<a href="#"><h4 class="pull-left">Approved &nbsp;</h4></a>
+					<div class="pull-left sub-nav">
+					<a href="job-board-school.php"><h4 class="pull-left">Approved &nbsp;</h4></a>
 					<h4 class="pull-left">|</h4>
-					<a href="job-board-school-approval.php"><h4 class="pull-left active-page">&nbsp;For Approval</h4>
-					</a>
+					<a href="#"><h4 class="pull-left active-page">&nbsp;For Approval</h4>
+					</a></div>
 					<form>
 						<input id="search-bar" type="text" class="underline-input pull-right" style="margin-top:20px; margin-bottom:20px;" placeholder="Search...">
 					</form>
