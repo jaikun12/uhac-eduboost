@@ -8,54 +8,52 @@
 		<link type="text/css" rel="stylesheet" href="css/myperformance.css">
 		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
    		<script type="text/javascript">
-      		google.charts.load('current', {'packages':['corechart']});
-      		google.charts.setOnLoadCallback(drawChart);
-      		function drawChart() {
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Status', 'Quantity'],
+          ['Completed',  112],
+          ['Ongoing',  56],
+          ['Cancelled', 25]
+      
+        ]);
 
-       		 var jobperf = google.visualization.arrayToDataTable([
-       		   ['Jobs', 'Quantity'],
-       		   ['Completed',     112],
-       		   ['Ongoing',      78],
-       		   ['Cancelled',  35],
-       		 ]);
-		
-       		 var jobperfops = {
-       		   title: 'Project Completion Summary'
-       		 };
-		
-       		 var jobperfchart = new google.visualization.PieChart(document.getElementById('jobperfchart'));
+      var options = {
+        legend: 'none',
+        pieSliceText: 'label',
+        title: 'Summary of jobs taken by students',
+        pieStartAngle: 100,
+      };
 
-       		 var keywords = google.visualization.arrayToDataTable([
-       		   ['Keyword', 'Times Searched'],
-       		   ['UX',     11],
-       		   ['design',      11],
-       		   ['testing',  2],
-       		 ]);
-		
-       		 var keywordsops = {
-       		   title: 'Searches Summary'
-       		 };
-		
-       		 var keywordchart = new google.visualization.PieChart(document.getElementById('keywordschart'));
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 
-       		 var jobscat = google.visualization.arrayToDataTable([
-       		   ['Category', 'Times Completed'],
-       		   ['Programming',     11],
-       		   ['Project Management',      5],
-       		   ['Testing',  2],
-       		 ]);
-		
-       		 var jobscatops = {
-       		   title: 'Job Completion Summary'
-       		 };
-		
-       		 var jobscatchart = new google.visualization.PieChart(document.getElementById('jobscatchart'));
-		
-       		 jobperfchart.draw(jobperf, jobperfops);
-       		 keywordchart.draw(keywords, keywordsops);
-       		 jobscatchart.draw(jobscat, jobscatops);
-     		 }
-    	</script>
+        var keywords = google.visualization.arrayToDataTable([
+          ['keywords', 'Quantity'],
+          ['Project',  72],
+          ['Management',  72],
+          ['UX', 25],
+          ['Design', 25]
+      
+        ]);
+
+      var keywordsoptions = {
+        legend: 'none',
+        pieSliceText: 'label',
+        title: 'Top search keywords by students',
+        pieStartAngle: 100,
+      };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        var keychart = new google.visualization.PieChart(document.getElementById('keywordschart'));
+
+
+        chart.draw(data, options);
+        keychart.draw(keywords, keywordsoptions);
+      }
+    </script>
+
 
 	</head>
       <body>
@@ -91,15 +89,15 @@
                                     <div class="col-md-4 sub-section" style="border-left:none;">
                                           <h4>Students' Performance</h4>
                                           <center>
-                                          <div id="jobperfchart" style="width: 350px; height: 300px;"></div>
-                                                
+                                                <div id="piechart" style="width: 350px; height: 300px;"></div>
+
                                           </center>
                                     </div>
 
                                     <div class="col-md-4 sub-section">
                                           <h4>Career</h4>
                                           <center>
-                                                
+                                                <div id="keywordschart" style="width: 350px; height: 300px;"></div>
                                           </center>
 
                                     </div>
