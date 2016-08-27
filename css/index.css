@@ -28,7 +28,7 @@ nav{
 
 .hollow-btn:hover{
 	background:white;
-	color:#C04D01;
+	color:#EC9A1A;
 	opacity:1;
 }
 
@@ -47,4 +47,33 @@ video#bgvid {
     transform: translateX(-50%) translateY(-50%);
     background: url(polina.jpg) no-repeat;
     background-size: cover; 
+}
+
+.logo{
+	height:75px;
+	width:100px;
+}
+
+#intro{
+	margin-top:30vh;
+	font-family:'Roboto';
+	color:white;
+}
+
+#intro h1{
+	font-size:5vh;
+}
+
+a{
+	color:white;
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	text-decoration:none;
+}
+
+a:hover{
+	color:#EC9A1A;
+	text-decoration:none;
 }

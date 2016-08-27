@@ -10,21 +10,20 @@
 		<nav>
 			<img class="pull-left logo" style="margin-top:-20px;" src="images/eduboostlogo.png">
 			<ul id="nav-menu" class="list-inline pull-left">
-				<li><a href="#"><div class="active">JOB BOARD</div></a></li>
-				<li><a href="myjobs-student.php"><div>MY JOBS</div></a></li>
-				<li><a href="myperformance.php"><div>MY PERFORMANCE</div></a></li>
-				<li><a href="mycompanies-student.php"><div>COMPANIES</div></a></li>
+				<li><a href="#"><div class="active">MY JOB POSTINGS</div></a></li>
+				<li><a href="company-linkages.php"><div>MY LINKAGES</div></a></li>
+				<li><a href="eduwatch.php"><div>EduWatch</div></a></li>
 			</ul>
 			
 			<ul class="list-inline pull-right">
 				<li>
-					<img class="img-circle profiledp" src="images/dp.jpg">
+					<img class="img-circle profiledp" src="images/ubankdp.png">
 				</li>
 				<li>
-					<p class="pull-right">Welcome, Chatur!</p>
+					<p class="pull-right">Welcome, Unionbank!</p>
 				</li>
 				<li>
-					<p class="pull-right"><a href="" class="hollow">Logout</a></p>
+					<p class="pull-right"><a href="index.php" class="hollow">Logout</a></p>
 				</li>
 			</ul>
 		</nav>
