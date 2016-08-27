@@ -1,0 +1,8 @@
+*{
+	box-sizing:border-box;
+}
+
+nav{
+	padding:20px;
+	height:75px;
+}

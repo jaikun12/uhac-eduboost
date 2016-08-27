@@ -1,0 +1,28 @@
+*{
+	box-sizing:border-box;
+}
+
+#search-bar{
+	width:20vw;
+}
+
+#job-board{
+	border-top:solid #747373 1px;
+	margin:0 auto;
+}
+
+#job-list{
+	clear:both;
+
+}
+
+.underline-input{
+	border:none;
+	border-bottom:solid #616161 1px;
+}
+
+.job-item{
+	width:100%;
+	height:75px;
+	border:solid black 1px;
+}
