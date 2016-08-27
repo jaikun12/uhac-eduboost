@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Aug 27, 2016 at 10:58 AM
+-- Generation Time: Aug 27, 2016 at 12:26 PM
 -- Server version: 10.1.9-MariaDB
 -- PHP Version: 5.6.15
 
@@ -110,10 +110,17 @@ INSERT INTO `completedjobs_table` (`userid`, `jobid`, `success_rating`, `coj_tim
 
 CREATE TABLE `jobs_details_table` (
   `jobid` int(15) NOT NULL,
-  `job_description` varchar(50) DEFAULT NULL,
-  `jobs_shortdesc` varchar(50) NOT NULL,
-  `jobs_req` varchar(50) NOT NULL
+  `job_description` varchar(1000) DEFAULT NULL,
+  `job_shortdesc` varchar(50) NOT NULL,
+  `job_req` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `jobs_details_table`
+--
+
+INSERT INTO `jobs_details_table` (`jobid`, `job_description`, `job_shortdesc`, `job_req`) VALUES
+(0, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus', 'Lorem ipsum', 'Lorem ipsum, lorem ipsum, lorem ipsum');
 
 -- --------------------------------------------------------
 
@@ -126,30 +133,33 @@ CREATE TABLE `jobs_table` (
   `jobname` varchar(100) DEFAULT NULL,
   `jobcategory` varchar(50) DEFAULT NULL,
   `jobrole` varchar(50) DEFAULT NULL,
-  `company` varchar(50) NOT NULL
+  `company` varchar(50) NOT NULL,
+  `jobshortdesc` varchar(1000) NOT NULL,
+  `jobdesc` varchar(1000) NOT NULL,
+  `jobreq` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `jobs_table`
 --
 
-INSERT INTO `jobs_table` (`jobid`, `jobname`, `jobcategory`, `jobrole`, `company`) VALUES
-(1, 'Re-design the company website', 'Programming', ' Front-End Designer', 'Jolibee'),
-(2, 'Make a logo based on the given criteria', 'Graphic Design', 'Graphic Designer', 'Birenear'),
-(3, 'Make an analysis and give your recommendations regarding the given data set', 'Business Analytics', 'Business Analyst', 'PointWest'),
-(4, 'Create an Entity Relationship Diagram for the proposed project', 'Project Management', 'Database Analyst', 'Buylinear'),
-(5, 'Cleanse the given database', 'Database Management', 'Database Administrator', 'IBM'),
-(6, 'Test the given application and document your insights and recommendations', 'Quality Management', 'QA Testing', 'Nestle'),
-(7, 'Create a blueprint', 'Architecture', 'Architect', 'Chooks2Go'),
-(8, 'Transform the following excel files to .csv format', 'Data Management', 'ETL Specialist', 'PointVest'),
-(9, 'Create a PR video for our upcoming event', 'Media Management', 'Video Editting', 'Wammu'),
-(10, 'Debug the malfunctioning part of the system', 'Programming', 'Back-End Developer', 'Esidisi'),
-(11, 'Create write-ups for our upcoming event', 'Writing', 'Article Writer', 'LBC'),
-(12, 'Use the following pictures to create a poster for our monthly promo', 'Graphic Design', 'Photo Editting', 'Sentucky Fried Chicken'),
-(13, 'Create a prototype for a mobile application', 'Programming', 'Mobile App Development', 'McRonalds'),
-(14, 'Create a design for a new company mascot based on the given theme', 'Graphic Design', 'Graphic Designer', 'TV 6'),
-(15, 'Construct blueprint for a new annex for our Ortigas branch', 'Architecture', 'Architect', 'MS Supermalls'),
-(16, 'Make a blueprint for our upcoming outlet store', 'Architecture', 'Interior Design', 'Uniqelow');
+INSERT INTO `jobs_table` (`jobid`, `jobname`, `jobcategory`, `jobrole`, `company`, `jobshortdesc`, `jobdesc`, `jobreq`) VALUES
+(1, 'Re-design the company website', 'Programming', ' Front-End Designer', 'Jolibee', 'Re-design the company website', 'A part of our inventory system is currently malfunctioning. What we need you to do is to identify which part of the system it is, and fix the problem. The system''s front-end uses HTML and CSS with bootstrap as it''s framework. Raw PHP and Javascript are used for the system''s back-end.', 'Knowledge of Raw PHP and Javascript'),
+(2, 'Make a logo based on the given criteria', 'Graphic Design', 'Graphic Designer', 'Birenear', 'Enhance the aesthetics of the Unionbank website to attract more customers.', 'Our company''s upcoming event entitled The Amazing Courier Race which will be happening next month, is a contest that involves employees from our different branches competing in an amazing race type game where they need to be the first to deliver the package by solving the different puzzles in order to uncover the delivery address. This event will be televised on TV 6 and we need competent students who excel in article writing to create entertaining and informative write-ups for this event, to be shared via our website and social media pages.', '-Fluent in written english. \r\n-Entertaining writing style that can captivate an audience.'),
+(3, 'Make an analysis and give your recommendations regarding the given data set', 'Business Analytics', 'Business Analyst', 'PointWest', 'Provide reports through Data Visualization Techniques', 'It has come to our attention that our customers are interested in a rather exotic addition to our menu. Our new Chicken Fillet Kebab will be featured next month along with the promo Turksday is Kebab Day where every Thursday of the month of September, every order of a Chicken Fillet Kebab is half off. Below is a zip file which has all the image files that you will need to use for the poster, as well as our watermarks which you are Required to use. If you want, you may also add your own images to create the poster. Please take note that we do not support plagiarism in any form, and if found that your submission is plagiarised in any way, we reserve the right to perform legal action.', '-Expertise in the use of photo editting tools. \r\n-Good eye for design. \r\n-A lot of creativity.'),
+(4, 'Create an Entity Relationship Diagram for the proposed project', 'Project Management', 'Database Analyst', 'Buylinear', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus', '-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. \r\n-Lorem ipsum dolor sit amet, consectetu'),
+(5, 'Cleanse the given database', 'Database Management', 'Database Administrator', 'IBM', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus', '-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. \r\n-Lorem ipsum dolor sit amet, consectetu'),
+(6, 'Test the given application and document your insights and recommendations', 'Quality Management', 'QA Testing', 'Nestle', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus', '-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. \r\n-Lorem ipsum dolor sit amet, consectetu'),
+(7, 'Create a blueprint', 'Architecture', 'Architect', 'Chooks2Go', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus', '-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. \r\n-Lorem ipsum dolor sit amet, consectetu'),
+(8, 'Transform the following excel files to .csv format', 'Data Management', 'ETL Specialist', 'PointVest', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus', '-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. \r\n-Lorem ipsum dolor sit amet, consectetu'),
+(9, 'Create a PR video for our upcoming event', 'Media Management', 'Video Editting', 'Wammu', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus', '-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. \r\n-Lorem ipsum dolor sit amet, consectetu'),
+(10, 'Debug the malfunctioning part of the system', 'Programming', 'Back-End Developer', 'Esidisi', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus', '-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. \r\n-Lorem ipsum dolor sit amet, consectetu'),
+(11, 'Create write-ups for our upcoming event', 'Writing', 'Article Writer', 'LBC', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus', '-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. \r\n-Lorem ipsum dolor sit amet, consectetu'),
+(12, 'Use the following pictures to create a poster for our monthly promo', 'Graphic Design', 'Photo Editting', 'Sentucky Fried Chicken', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus', '-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. \r\n-Lorem ipsum dolor sit amet, consectetu'),
+(13, 'Create a prototype for a mobile application', 'Programming', 'Mobile App Development', 'McRonalds', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus', '-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. \r\n-Lorem ipsum dolor sit amet, consectetu'),
+(14, 'Create a design for a new company mascot based on the given theme', 'Graphic Design', 'Graphic Designer', 'TV 6', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus', '-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. \r\n-Lorem ipsum dolor sit amet, consectetu'),
+(15, 'Construct blueprint for a new annex for our Ortigas branch', 'Architecture', 'Architect', 'MS Supermalls', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus', '-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. \r\n-Lorem ipsum dolor sit amet, consectetu'),
+(16, 'Make a blueprint for our upcoming outlet store', 'Architecture', 'Interior Design', 'Uniqelow', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus', '-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. \r\n-Lorem ipsum dolor sit amet, consectetu');
 
 -- --------------------------------------------------------
 
@@ -189,12 +199,6 @@ INSERT INTO `users_table` (`userid`, `username`, `firstname`, `lastname`, `email
 --
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `jobs_details_table`
---
-ALTER TABLE `jobs_details_table`
-  ADD PRIMARY KEY (`jobid`);
 
 --
 -- Indexes for table `jobs_table`
