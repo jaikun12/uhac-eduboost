@@ -12,7 +12,7 @@
 		<nav>
 			<img class="pull-left logo" style="margin-top:-20px;" src="images/eduboostlogo.png">
 			<ul id="nav-menu" class="list-inline pull-left">
-				<li><a href="schoool-dash.php"><div>MY STUDENTS</div></a></li>
+				<li><a href="school-dash.php"><div>MY STUDENTS</div></a></li>
 				<li><a href="#"><div class="active">JOB BOARD</div></a></li>
 				<li><a href=""><div>MY PERFORMANCE</div></a></li>
 				<li><a href=""><div>LINKAGES</div></a></li>
@@ -36,9 +36,9 @@
 					<div id="job-board" class="container">
 					<h3 class="pull-left">Job Board</h3>
 					<div class="pull-left">
-					<a href="job-board-school.php"><h4 class="pull-left active-page">Approved &nbsp;</h4></a>
+					<a href="#"><h4 class="pull-left">Approved &nbsp;</h4></a>
 					<h4 class="pull-left">|</h4>
-					<a href="#"><h4 class="pull-left">&nbsp;For Approval</h4>
+					<a href="job-board-school-approval.php"><h4 class="pull-left active-page">&nbsp;For Approval</h4>
 					</a>
 					<form>
 						<input id="search-bar" type="text" class="underline-input pull-right" style="margin-top:20px; margin-bottom:20px;" placeholder="Search...">
@@ -53,11 +53,11 @@
 									</div>
 
 									<div class="col-md-6">
-									<p class="pull-left job-short-description">Perform QA testing on the IBM website.</p>
+									<p class="pull-left job-short-description">Perform QA testing on the Unionbank website.</p>
 									</div>
 
 									<div class="col-md-3">
-									<img src="images/ibmlogo.png" class="comp-logo">
+									<img src="images/ibmlogo.jpg" class="comp-logo">
 
 									</div>
 									
@@ -72,11 +72,11 @@
 									</div>
 
 									<div class="col-md-6">
-									<p class="pull-left job-short-description">Enhance the aesthetics of the IBM website to attract more customers. </p>
+									<p class="pull-left job-short-description">Enhance the aesthetics of the Unionbank website to attract more customers. </p>
 									</div>
 
 									<div class="col-md-3">
-									<img src="images/ibmlogo.png" class="comp-logo">
+									<img src="images/ibmlogo.jpg" class="comp-logo">
 
 									</div>
 									
