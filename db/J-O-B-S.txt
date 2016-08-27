@@ -1,0 +1,32 @@
+1('Debug the malfunctioning part of the system', 'Programming', 'Back-End Developer', 'Esidisi'),
+
+2('Create write-ups for our upcoming event', 'Writing', 'Article Writer', 'LBC'),
+
+3('Use the following pictures to create a poster for our monthly promo', 'Graphic Design', 'Photo Editting', 'Sentucky Fried Chicken'),
+
+4('Create a prototype for a mobile application', 'Programming', 'Mobile App Development', 'McRonalds'),
+
+5('Create a design for a new company mascot based on the given theme' 'Graphic Design', 'Graphic Designer', 'TV 6'),
+
+6('Construct blueprint for a new annex for our Ortigas branch', 'Architecture', 'Architect', 'MS Supermalls'),
+
+7('Make a blueprint for our upcoming outlet store', 'Architecture', 'Interior Design', 'Uniqelow')
+
+8('Re-design the company website', 'Programming', ' Front-End Designer' 'Jolibee'),
+
+9('Make a logo based on the given criteria', 'Graphic Design', 'Graphic Designer', 'Birenear'),
+
+10('Make an analysis and give your recommendations regarding the given data set', 'Business Analytics', 'Business Analyst', 'PointWest'),
+
+11('Create an Entity Relationship Diagram for the proposed project', 'Project Management', 'Database Analyst', 'Buylinear'),
+
+12('Cleanse the given database', 'Database Management', 'Database Administrator', 'IBM'),
+
+13('Test the given application and document your insights and recommendations' 'Quality Management' 'QA Testing', 'Nestle'),
+
+14('Create a blueprint', 'Architecture', 'Architect', 'Chooks2Go'),
+
+15('Transform the following excel files to .csv format', 'Data Management', 'ETL Specialist', 'PointVest'),
+
+16('Create a PR video for our upcoming event', 'Media Management', 'Video Editting', 'Wammu')
+

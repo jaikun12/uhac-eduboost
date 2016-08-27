@@ -1,0 +1,24 @@
+1. 'A part of our inventory system is currently malfunctioning. What we need you to do is to identify which part of the system it is, and fix the problem. The system's front-end uses HTML and CSS with bootstrap as it's framework. Raw PHP and Javascript are used for the system's back-end.
+
+Requirements: 
+-Knowledge of Raw PHP and Javascript
+
+2. 'Our company's upcoming event entitled "The Amazing "Courier" Race" which will be happening next month, is a contest that involves employees from our different branches competing in an amazing race type game where they need to be the first to deliver the package by solving the different puzzles in order to uncover the delivery address. This event will be televised on TV 6 and we need competent students who excel in article writing to create entertaining and informative write-ups for this event, to be shared via our website and social media pages.
+
+Requirements:
+-Fluent in written english.
+-Entertaining writing style that can captivate an audience.
+
+3. 'It has come to our attention that our customers are interested in a rather exotic addition to our menu. Our new "Chicken Fillet Kebab" will be featured next month along with the promo "Turksday is Kebab Day" where every Thursday of the month of September, every order of a "Chicken Fillet Kebab" is half off. Below is a zip file which has all the image files that you will need to use for the poster, as well as our watermarks which you are "Required" to use. If you want, you may also add your own images to create the poster. Please take note that we do not support plagiarism in any form, and if found that your submission is plagiarised in any way, we reserve the right to perform legal action.
+
+Requirements:
+-Expertise in the use of photo editting tools.
+-Good eye for design.
+-A lot of creativity.
+
+Lorem-Ipsum:
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus
+
+
+

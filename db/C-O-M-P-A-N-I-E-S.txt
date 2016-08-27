@@ -1,0 +1,7 @@
+(Tony_T, Tony, Tan, Tony_Tan69@hotmail.com, 012345678901, , Jolibee, company)
+(Yhuge, Eugene, Leoncio, eugeneleoncio@gmail.com, 0927789101, Birenear, company)
+(boazcstrike, Boaz, Sze, boazcstrike@yahoo.com, 09167892011, Wammu, company)
+(JoJo, Joseph, Joestar, JoJo@gmail.com, 09160291987, Esidisi, company)
+(REO, Robert, Speedwagon, REOSPDWGN@yahoo.com, 09210059011, PointVest, company)
+(Mr_Fahrenheit, Freddie, Mercury, F_Mercury@hotmail.com, 09277577211, MS Supermalls, company)
+
