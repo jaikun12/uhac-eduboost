@@ -10,10 +10,10 @@
 		<nav>
 			<h3 class="pull-left" style="margin:0;">Place logo here</h3>
 			<ul id="nav-menu" class="list-inline pull-left">
-				<li><a href=""><div>JOB BOARD</div></a></li>
-				<li><a href=""><div>MY JOBS</div></a></li>
-				<li><a href=""><div>MY PERFORMANCE</div></a></li>
-				<li><a href=""><div>COMPANIES</div></a></li>
+				<li><a href="#"><div class="active">JOB BOARD</div></a></li>
+				<li><a href="myjobs-student.php"><div>MY JOBS</div></a></li>
+				<li><a href="myperformance.php"><div>MY PERFORMANCE</div></a></li>
+				<li><a href="mycompanies-student.php"><div>COMPANIES</div></a></li>
 			</ul>
 			
 			<ul class="list-inline pull-right">
@@ -45,14 +45,14 @@
 						<ul id="job-list" class="list-unstyled">
 							<?php 
 
-									$query = mysql_query("SELECT * FROM jobs_table;");
+									$query = mysql_query("SELECT * FROM completed_jobstable WHERE userid = 1;");
 
-									while ($jobs_table = mysql_fetch_array($query)){
-										$jobname = $jobs_table['jobname'];
-										$jobcategory = $jobs_table['jobcategory'];
-										$jobrole = $jobs_table['jobrole'];
-										$company = $jobs_table['company'];
-										$jobshortdesc = $jobs_table['jobshortdesc'];
+									while ($completedjobs_table = mysql_fetch_array($query)){
+										$jobid = $jobs_table['jobid'];
+
+										$completedjobs_query = mysql_query("SELECT * FROM completedjobs_table WHERE jobid = $jobid;");
+
+										while (mysql_fetch_array($completedjobs_query)){
 
 									echo '
 									<li><a href="">
