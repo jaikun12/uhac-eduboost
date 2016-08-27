@@ -6,6 +6,8 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link type="text/css" rel="stylesheet" href="css/nav-student.css">
 		<link type="text/css" rel="stylesheet" href="css/myperformance.css">
+		<link type="text/css" rel="stylesheet" href="css/student-performance.css">
+
 		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
    		<script type="text/javascript">
       		google.charts.load('current', {'packages':['corechart']});
@@ -84,7 +86,8 @@
 		<div class="wrapper">
 			<center>
 				<div id="myperformance" class="container">
-					<h3 class="pull-left">My Performance</h3>
+					<center><img src="images/dp.jpg" class="profpic img-circle" style="margin-left:180px;">
+					<h3 class="">Chatur Dimapreeh</h3></center>
 					<div class="container divider">
 					</div>
 					<div id="performance-section" class="row">

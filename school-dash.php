@@ -36,7 +36,7 @@
 				<input id="search-bar" type="text" class="underline-input pull-right" style="margin-top:20px; margin-right:-150px;" placeholder="Search...">
 			</form>
 			<ul id="student-list" class="list-unstyled">
-				<li><a href="">
+				<li><a href="student-performance.php">
 					<div class="container-fluid student-item">
 						<div class="col-md-3">
 							<img class="studentdp img-circle pull-left" src="images/dp.jpg">
