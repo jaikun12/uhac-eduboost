@@ -44,7 +44,7 @@
 						<ul id="job-list" class="list-unstyled">
 							<?php 
 
-									$query = mysql_query("SELECT * FROM jobs_table;");
+									$query = mysql_query("SELECT * FROM jobs_table WHERE company = 'Unionbank' ORDER BY jobcategory ASC;");
 
 									while ($jobs_table = mysql_fetch_array($query)){
 										$jobname = $jobs_table['jobname'];
@@ -74,63 +74,6 @@
 									</li>';
 									}
 							?>
-
-							<!--li><a href="">
-								<div class="container-fluid job-item">
-									<div class="col-md-3">
-									<h4 class="pull-left">Revamp design of Unionbank Website</h4>
-									<h4 class="clear-both sm-font job-category">Category: UX/UI Designing</h4>
-									</div>
-
-									<div class="col-md-6">
-									<p class="pull-left job-short-description">Enhance the aesthetics of the Unionbank website to attract more customers. </p>
-									</div>
-
-									<div class="col-md-3">
-									<img src="images/ubanklogo.png" class="comp-logo">
-
-									</div>
-									
-								</div></a>
-							</li>
-
-							<li><a href="">
-								<div class="container-fluid job-item">
-									<div class="col-md-3">
-									<h4 class="pull-left">Create business continuity plan</h4>
-									<h4 class="clear-both sm-font job-category">Category: Project Management</h4>
-									</div>
-
-									<div class="col-md-6">
-									<p class="pull-left job-short-description">Perform QA testing on the unionbank website.</p>
-									</div>
-
-									<div class="col-md-3">
-									<img src="images/ubanklogo.png" class="comp-logo">
-
-									</div>
-									
-								</div></a>
-							</li>
-
-							<li><a href="">
-								<div class="container-fluid job-item">
-									<div class="col-md-3">
-									<h4 class="pull-left">Create business continuity plan</h4>
-									<h4 class="clear-both sm-font job-category">Category: Project Management</h4>
-									</div>
-
-									<div class="col-md-6">
-									<p class="pull-left job-short-description">Perform QA testing on the unionbank website.</p>
-									</div>
-
-									<div class="col-md-3">
-									<img src="images/ibmlogo.jpg" class="comp-logo">
-
-									</div>
-									
-								</div></a>
-							</li-->
 
 						</ul>
 					</div>

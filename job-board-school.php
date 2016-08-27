@@ -48,7 +48,7 @@
 							<?php
 							include("php/dbconnect.php");
 
-							$query = mysql_query("SELECT * FROM jobs_table ORDER BY $company DESC;");
+							$query = mysql_query("SELECT * FROM jobs_table ORDER BY company DESC;");
 
 							while ($jobs_table = mysql_fetch_array($query)){
 								$jobname = $jobs_table['jobname'];
