@@ -12,7 +12,7 @@
 			<ul id="nav-menu" class="list-inline pull-left">
 				<li><a href="#"><div class="active">JOB BOARD</div></a></li>
 				<li><a href="myjobs-student.php"><div>MY JOBS</div></a></li>
-				<li><a href="myperformance-student.php"><div>MY PERFORMANCE</div></a></li>
+				<li><a href="myperformance.php"><div>MY PERFORMANCE</div></a></li>
 				<li><a href="mycompanies-student.php"><div>COMPANIES</div></a></li>
 			</ul>
 			
