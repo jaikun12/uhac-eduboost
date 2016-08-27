@@ -11,7 +11,7 @@
 			<img class="pull-left logo" style="margin-top:-20px;" src="images/eduboostlogo.png">
 			<ul id="nav-menu" class="list-inline pull-left">
 				<li><a href="initview-student.php"><div>JOB BOARD</div></a></li>
-				<li><a href="myjobs-student.php"><div class="active">MY JOBS</div></a></li>
+				<li><a href="#"><div class="active">MY JOBS</div></a></li>
 				<li><a href="myperformance.php"><div>MY PERFORMANCE</div></a></li>
 				<li><a href="mycompanies-student.php"><div>COMPANIES</div></a></li>
 			</ul>
