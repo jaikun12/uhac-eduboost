@@ -13,6 +13,7 @@
 		<nav>
 			<img src="images/eduboostlogowhite.png" class="logo pull-left">
 			<button class="hollow-btn" style="margin-top:20px;">LOGIN</button>
+			<button class="hollow-btn" style="margin-top:20px;margin-right:20px;">REGISTER</button>
 		</nav>
 
 		<center>

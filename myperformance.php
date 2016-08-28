@@ -44,8 +44,13 @@
 
        		 var jobperf = google.visualization.arrayToDataTable([
        		   ['Jobs', 'Quantity'],
+<<<<<<< HEAD
+       		   ['Completed',     5],
+       		   ['Ongoing',      1],
+=======
        		   ['Completed',     11],
        		   ['Ongoing',      8],
+>>>>>>> d2ad5fb5d3f002cf94a4abd0b6ee50cc87e57310
        		   ['Cancelled',  2],
        		 ]);
 		
@@ -95,7 +100,6 @@
 				<li><a href="initview-student.php"><div>JOB BOARD</div></a></li>
 				<li><a href="myjobs-student.php"><div>MY JOBS</div></a></li>
 				<li><a href="#"><div class="active">MY PERFORMANCE</div></a></li>
-				<li><a href="mycompanies-student.php"><div>COMPANIES</div></a></li>
 			</ul>
 			
 			<ul class="list-inline pull-right">
