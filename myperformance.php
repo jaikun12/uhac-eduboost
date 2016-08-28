@@ -44,8 +44,8 @@
 
        		 var jobperf = google.visualization.arrayToDataTable([
        		   ['Jobs', 'Quantity'],
-       		   ['Completed',     $com_count],
-       		   ['Ongoing',      ],
+       		   ['Completed',     11],
+       		   ['Ongoing',      8],
        		   ['Cancelled',  2],
        		 ]);
 		
