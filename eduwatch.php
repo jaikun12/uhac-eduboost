@@ -30,12 +30,12 @@
 		</nav>
 		<div class="wrapper">
 		<div id="students" class="container">
-			<h3 class="pull-left">My Students</h3>
+			<h3 class="pull-left">EduWatch List</h3>
 			<form>
 				<input id="search-bar" type="text" class="underline-input pull-right" style="margin-top:20px; margin-right:-150px;" placeholder="Search...">
 			</form>
 			<ul id="student-list" class="list-unstyled">
-				<li><a href="student-performance.php">
+				<li><a href="student-performance-company.php">
 					<div class="container-fluid student-item">
 						<div class="col-md-3">
 							<img class="studentdp img-circle pull-left" src="images/dp.jpg">

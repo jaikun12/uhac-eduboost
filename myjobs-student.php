@@ -96,7 +96,7 @@
 							?>
 					<h5 style="margin:12px 0 -8px 0;text-align:left;color:green;">Completed Jobs</h5>
 					<hr>
-						<ul id="job-list" class="list-unstyled">
+						<ul id="" class="list-unstyled">
 							<?php 
 
 									$completedjobs_table_query = mysql_query("SELECT * FROM completedjobs_table WHERE userid = 1;");
