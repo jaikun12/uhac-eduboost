@@ -63,6 +63,7 @@
 									<h4 class="pull-left">' . $jobcategory .'</h4>
 									<h4 class="clear-both sm-font job-category">' . $jobrole . '
 									</h4>
+									<h4 class="clear-both sm-font job-category"> Job pay here </h4>
 									</div>
 
 									<div class="col-md-6">
