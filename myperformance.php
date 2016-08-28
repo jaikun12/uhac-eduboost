@@ -44,13 +44,8 @@
 
        		 var jobperf = google.visualization.arrayToDataTable([
        		   ['Jobs', 'Quantity'],
-<<<<<<< HEAD
-       		   ['Completed',     5],
-       		   ['Ongoing',      1],
-=======
        		   ['Completed',     11],
        		   ['Ongoing',      8],
->>>>>>> d2ad5fb5d3f002cf94a4abd0b6ee50cc87e57310
        		   ['Cancelled',  2],
        		 ]);
 		
