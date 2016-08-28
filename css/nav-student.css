@@ -53,6 +53,7 @@ nav{
   	-ms-transition:.5s;
   	-moz-transition:.5s;
   	-webkit-transition:.5s;
+  	background:none;
 
 }
 
@@ -60,6 +61,42 @@ nav{
 	border:solid #EC9A1A 1px;
 	text-decoration:none;
 	color:#EC9A1A;
+}
+
+.hollow-red{
+	border:solid white 1px;
+	padding:5px;
+	text-decoration:none;
+	color:black;
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	background:none;
+}
+
+.hollow-red:hover{
+	border:solid #C60035 1px;
+	text-decoration:none;
+	color:#C60035;
+}
+
+.hollow-green{
+	border:solid white 1px;
+	padding:5px;
+	text-decoration:none;
+	color:black;
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	background:none;
+}
+
+.hollow-green:hover{
+	border:solid #019600 1px;
+	text-decoration:none;
+	color:#019600;
 }
 
 .active{

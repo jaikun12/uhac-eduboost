@@ -58,7 +58,7 @@
 								$jobshortdesc = $jobs_table['jobshortdesc'];
 								$jobpay = $jobs_table['job_pay'];
 
-							echo '<li><a href="">
+							echo '<li><a href="job-detail-school.php">
 									<div class="container-fluid job-item">
 									<div class="col-md-3">
 									<h4 class="pull-left">' . $jobcategory .'</h4>
