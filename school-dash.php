@@ -13,8 +13,8 @@
 			<ul id="nav-menu" class="list-inline pull-left">
 				<li><a href="#"><div class="active">MY STUDENTS</div></a></li>
 				<li><a href="job-board-school.php"><div>JOB BOARD</div></a></li>
-				<li><a href=""><div>MY PERFORMANCE</div></a></li>
-				<li><a href=""><div>LINKAGES</div></a></li>
+				<li><a href="myperformance-school.php"><div>MY PERFORMANCE</div></a></li>
+				<li><a href="school-linkages.php"><div>LINKAGES</div></a></li>
 			</ul>
 			
 			<ul class="list-inline pull-right">

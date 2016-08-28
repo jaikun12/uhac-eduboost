@@ -37,7 +37,7 @@
 					?>
 				</div>
 					<div id="job-board" class="container">
-					<h3 class="pull-left">Job Board</h3>
+					<h3 class="pull-left">Linkage Information</h3>
 					<form>
 						<input id="search-bar" type="text" class="underline-input pull-right" style="margin-top:20px;" placeholder="Search...">
 					</form>
