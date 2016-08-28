@@ -18,8 +18,7 @@
 			
 			<ul class="list-inline pull-right">
 				<li>
-					<a href="myjobs-student-cashout.php">
-					<img class="img-circle profiledp" src="images/dp.jpg"></a>
+					<img class="img-circle profiledp" src="images/dp.jpg">
 				</li>
 				<li>
 					<p class="pull-right">Welcome, Chatur!</p>
@@ -118,7 +117,7 @@
 										$jobshortdesc = $result['jobshortdesc'];
 
 									echo '
-									<li><a href="">
+									<li>
 									<div class="container-fluid job-item">
 									<div class="col-md-3">
 									<h4 class="pull-left">' . $jobcategory .'</h4>
@@ -169,19 +168,19 @@
 									echo '</h4>
 									</div>
 
-									<div class="col-md-4">
+									<div class="col-md-3">
 									<p class="pull-left job-short-description"> Time completed:<br>' . $coj_timestamp .'</p>
 									</div>
 
-									<div class="col-md-2">
-									<p class="pull-left job-short-description"> Received: <br>' . $jobpay .' Pesos</p>
-									</div>
+									<a href="#"><div class="hollow col-md-3">
+									<p class="pull-left job-short-description"> Cash Out: ' . $jobpay .' Pesos on Registered Account.</p>
+									</div></a>
 
 									<div class="col-md-3">
 									<img src="images/ubanklogo.png" class="comp-logo">
 
 									</div>	
-									</div></a>';
+									</div>';
 										
 										// end fetch of table
 									}
