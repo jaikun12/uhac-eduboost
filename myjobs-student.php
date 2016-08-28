@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link type="text/css" rel="stylesheet" href="css/nav-student.css">
 		<link type="text/css" rel="stylesheet" href="css/initview-student.css">
+
 	</head>
 	<body>
 		<nav>
@@ -74,7 +75,7 @@
 
 									if ($success_rating == 1){
 										 echo '<ul class="list-inline">
-										 <li><span class="glyphicon glyphicon-star"></span></li>
+										 <li><img src="images/star.png" class="rating-star"></li>
 										 <li></li>
 										 <li></li>
 										 <li></li>
@@ -82,35 +83,35 @@
 									}
 									elseif ($success_rating == 2){
 										 echo '<ul class="list-inline">
-										 <li><span class="glyphicon glyphicon-star"></span></li>
-										 <li><span class="glyphicon glyphicon-star"></span></li>
+										 <li><img src="images/star.png" class="rating-star"></li>
+										 <li><img src="images/star.png" class="rating-star"></li>
 										 <li></li>
 										 <li></li>
 										 <li></li>';
 									}
 									elseif ($success_rating == 3){
 										 echo '<ul class="list-inline">
-										 <li><span class="glyphicon glyphicon-star"></span></li>
-										 <li><span class="glyphicon glyphicon-star"></span></li>
-										 <li><span class="glyphicon glyphicon-star"></span></li>
+										 <li><img src="images/star.png" class="rating-star"></li>
+										 <li><img src="images/star.png" class="rating-star"></li>
+										 <li><img src="images/star.png" class="rating-star"></li>
 										 <li></li>
 										 <li></li>';
 									}
 									elseif ($success_rating == 4){
 										 echo '<ul class="list-inline">
-										 <li><span class="glyphicon glyphicon-star"></span></li>
-										 <li><span class="glyphicon glyphicon-star"></span></li>
-										 <li><span class="glyphicon glyphicon-star"></span></li>
-										 <li><span class="glyphicon glyphicon-star"></span></li>
+										 <li><img src="images/star.png" class="rating-star"></li>
+										 <li><img src="images/star.png" class="rating-star"></li>
+										 <li><img src="images/star.png" class="rating-star"></li>
+										 <li><img src="images/star.png" class="rating-star"></li>
 										 <li></li>';
 									}
 									else{
 										 echo '<ul class="list-inline">
-										 <li><span class="glyphicon glyphicon-star"></span></li>
-										 <li><span class="glyphicon glyphicon-star"></span></li>
-										 <li><span class="glyphicon glyphicon-star"></span></li>
-										 <li><span class="glyphicon glyphicon-star"></span></li>
-										 <li><span class="glyphicon glyphicon-star"></span></li>';
+										 <li><img src="images/star.png" class="rating-star"></li>
+										 <li><img src="images/star.png" class="rating-star"></li>
+										 <li><img src="images/star.png" class="rating-star"></li>
+										 <li><img src="images/star.png" class="rating-star"></li>
+										 <li><img src="images/star.png" class="rating-star"></li>';
 									}
 								}
 
@@ -183,5 +184,6 @@
 
 		<script src="bootstrap.min.js"></script>
 		<script src="js/jquery-2.2.0.min.js"></script>
+		<script src="https://use.fontawesome.com/5d707990f5.js"></script>
 	</body>
 </html>
