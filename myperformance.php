@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	<!--boaz's fucked up codes pt1 10:17am-->
+		<?php
+			include("php/dbconnect.php");
+
+			$users_query = mysql_query("SELECT * FROM users_table WHERE userid = 1;");
+
+			$completed_query = mysql_query("SELECT * FROM completedjobs_table WHERE userid = 1;");
+
+			while (mysql_fetch_array($completed_query)){
+				
+			}
+
+			$cancelled_query = mysql_query("SELECT * FROM cancelledjobs_table WHERE userid = 1;");
+
+
+					?>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand|Roboto" rel="stylesheet"> 
 		<script src="https://use.fontawesome.com/5d707990f5.js"></script>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
