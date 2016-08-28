@@ -55,28 +55,13 @@
 									$jobrole = $jobs_table['jobrole'];
 									$company = $jobs_table['company'];
 									$jobshortdesc = $jobs_table['jobshortdesc'];
-								echo '<a class="btn btn-primary" data-toggle="modal" href="#'. $jobid .'modal-id">Trigger modal</a>
-								<div class="modal fade" id="'.$jobid.'">
-									<div class="modal-dialog">
-										<div class="modal-content">
-											<div class="modal-header">
-												<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-												<h4 class="modal-title">Modal title</h4>
-											</div>
-											<div class="modal-body">
-												
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-												<button type="button" class="btn btn-primary">Save changes</button>
-											</div>
-										</div>
-									</div>
-								</div>
+								echo '
+								
 									<li><a href="">
 									<div class="container-fluid job-item">
 									<div class="col-md-3">
 									<h4 class="pull-left">' . $jobcategory .'</h4>
+									<img src="images/thumbs-up.png" style="height:30px; width: 25px; margin:3px 0 0 10px;">
 									<h4 class="clear-both sm-font job-category">' . $jobrole . '
 									</h4>
 									</div>

@@ -52,29 +52,50 @@
 							<?php 
 
 									$ongoingjobs_table_query = mysql_query("SELECT * FROM ongoingjobs_table WHERE userid = 1;");
+									
 
 									while ($ongoingjobs_table = mysql_fetch_array($ongoingjobs_table_query)){
 										$jobid = $ongoingjobs_table['jobid'];
-										$per_completed = $ongoingjobs_table['per_completed'];
+										$per_completed = $ongoingjobs_table['per_completion'];
 										$ong_timestamp = $ongoingjobs_table['ong_timestamp'];
 
-									echo '</h4>
+										$jobs_table_query = mysql_query("SELECT * FROM jobs_table WHERE jobid = $jobid;"); 
+
+										while ($result = mysql_fetch_array($jobs_table_query)){
+										
+										$jobname = $result['jobname'];
+										$jobcategory = $result['jobcategory'];
+										$jobrole = $result['jobrole'];
+										$company = $result['company'];
+										$jobshortdesc = $result['jobshortdesc'];
+										$jobpay = $result['job_pay'];
+									echo '
+									<li><a href="">
+									<div class="container-fluid job-item">
+									<div class="col-md-3">
+									<h4 class="pull-left">' . $jobcategory .'</h4>
+									<h4 class="clear-both sm-font job-category">Percentage Completed: ' . ($per_completed*100) .'%</h4>
 									</div>
-									<div class="col-md-6">
-									<p class="pull-left job-short-description"> Percentage completed:<br>' . ($ong_timestamp*100) .'%</p>
+
+									<div class="col-md-4">
+									<p class="pull-left job-short-description"> Time accepted: <br>' . $ong_timestamp .'</p>
+									</div>
+
+									<div class="col-md-2">
+									<p class="pull-left job-short-description"> Payout: <br>' . $jobpay .' Pesos</p>
 									</div>
 
 									<div class="col-md-3">
 									<img src="images/ubanklogo.png" class="comp-logo">
 
 									</div>	
-									</div></a>
-									</li>';
+									</div></a>';
 										
 										// end fetch of table
 									}
+								}
 							?>
-					<h5 style="margin:-12px 0 -8px 0;text-align:left;color:#EC9A1A">Completed Jobs</h5>
+					<h5 style="margin:12px 0 -8px 0;text-align:left;color:green;">Completed Jobs</h5>
 					<hr>
 						<ul id="job-list" class="list-unstyled">
 							<?php 
@@ -148,16 +169,19 @@
 									echo '</h4>
 									</div>
 
-									<div class="col-md-6">
+									<div class="col-md-4">
 									<p class="pull-left job-short-description"> Time completed:<br>' . $coj_timestamp .'</p>
+									</div>
+
+									<div class="col-md-2">
+									<p class="pull-left job-short-description"> Received: <br>' . $jobpay .' Pesos</p>
 									</div>
 
 									<div class="col-md-3">
 									<img src="images/ubanklogo.png" class="comp-logo">
 
 									</div>	
-									</div></a>
-									</li>';
+									</div></a>';
 										
 										// end fetch of table
 									}

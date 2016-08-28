@@ -55,6 +55,7 @@
 										$jobrole = $jobs_table['jobrole'];
 										$company = $jobs_table['company'];
 										$jobshortdesc = $jobs_table['jobshortdesc'];
+										$jobpay = $jobs_table['job_pay'];
 
 									echo '
 									<li><a href="">
@@ -63,7 +64,7 @@
 									<h4 class="pull-left">' . $jobcategory .'</h4>
 									<h4 class="clear-both sm-font job-category">' . $jobrole . '
 									</h4>
-									<h4 class="clear-both sm-font job-category"> Job pay here </h4>
+									<p class="clear-both sm-font job-category" style="color:#2ED529">Payout: ' . $jobpay . ' pesos</p>
 									</div>
 
 									<div class="col-md-6">
