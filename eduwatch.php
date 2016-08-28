@@ -11,7 +11,7 @@
 		<nav>
 			<img class="pull-left logo" style="margin-top:-20px;" src="images/eduboostlogo.png">
 			<ul id="nav-menu" class="list-inline pull-left">
-				<li><a href="#"><div>MY JOB POSTINGS</div></a></li>
+				<li><a href="company-dash.php"><div>MY JOB POSTINGS</div></a></li>
 				<li><a href="company-linkages.php"><div>MY LINKAGES</div></a></li>
 				<li><a href="eduwatch.php"><div class="active">EduWatch</div></a></li>
 			</ul>

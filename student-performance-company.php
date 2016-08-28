@@ -64,11 +64,10 @@
 		<nav>
 			<img class="pull-left logo" style="margin-top:-20px;" src="images/eduboostlogo.png">
 			<ul id="nav-menu" class="list-inline pull-left">
-                        <li><a href="school-dash.php"><div>MY STUDENTS</div></a></li>
-                        <li><a href="job-board-school.php"><div>JOB BOARD</div></a></li>
-                        <li><a href=""><div class="active">MY PERFORMANCE</div></a></li>
-                        <li><a href=""><div>LINKAGES</div></a></li>
-                  </ul>
+				<li><a href="company-dash.php"><div>MY JOB POSTINGS</div></a></li>
+				<li><a href="company-linkages.php"><div>MY LINKAGES</div></a></li>
+				<li><a href="eduwatch.php"><div class="active">EduWatch</div></a></li>
+			</ul>
 			
 			<ul class="list-inline pull-right">
 				<li>
@@ -86,7 +85,7 @@
 		<div class="wrapper">
 			<center>
 				<div id="myperformance" class="container">
-					<center><img src="images/dp.jpg" class="profpic img-circle" style="margin-left:180px;">
+					<center><img src="images/dp.jpg" class="profpic img-circle" style="margin-left:90px;">
 					<h3 class="">Chatur Dimapreeh</h3></center>
 					<div class="container divider">
 					</div>
