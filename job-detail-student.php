@@ -41,7 +41,7 @@
 							<h4>Job Description</h4>
 							<center>
 								<span style="text-align:left;">A part of our inventory system is currently malfunctioning. What we need you to do is to identify which part of the system it is, and fix the problem. The system's front-end uses HTML and CSS with bootstrap as it's framework. Raw PHP and Javascript are used for the system's back-end.</span>
-
+								<br><br><br>
 								<button class="hollow">Accept</button>
 							</center>
 						</div>
