@@ -47,7 +47,7 @@
 						<ul id="job-list" class="list-unstyled">
 							<?php 
 
-									$query = mysql_query("SELECT * FROM jobs_table ORDER BY jobcategory ;");
+									$query = mysql_query("SELECT * FROM jobs_table ORDER BY jobcategory;");
 
 									while ($jobs_table = mysql_fetch_array($query)){
 										$jobname = $jobs_table['jobname'];
