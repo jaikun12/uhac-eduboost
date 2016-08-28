@@ -57,7 +57,7 @@
 										$jobpay = $jobs_table['job_pay'];
 
 									echo '
-									<li><a href="">
+									<li><a href="job-detail-student.php">
 									<div class="container-fluid job-item">
 									<div class="col-md-3">
 									<h4 class="pull-left">' . $jobcategory .'</h4>
