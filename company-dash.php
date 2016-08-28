@@ -63,7 +63,6 @@
 									<h4 class="pull-left">' . $jobcategory .'</h4>
 									<h4 class="clear-both sm-font job-category">' . $jobrole . '
 									</h4>
-									<span class="clear-both sm-font job-category" style="color:red">Payout: ' . $jobpay . ' pesos</span>
 									</div>
 									
 									<div class="col-md-1">
@@ -72,7 +71,10 @@
 									</div>
 
 									<div class="col-md-5">
-									<p class="pull-left job-short-description">' . $jobname .'</p>
+									<p class="pull-left job-short-description">' . $jobname .'.</p>
+									</div>
+									<div class="col-md-1">
+										<p style="color:red;"> Payout: ' . $jobpay . ' </p>
 									</div>
 
 									<div class="col-md-3">
@@ -98,6 +100,7 @@
 										$jobrole = $jobs_table['jobrole'];
 										$company = $jobs_table['company'];
 										$jobshortdesc = $jobs_table['jobshortdesc'];
+										$jobpay = $jobs_table['job_pay'];
 
 									echo '
 									<li><a href="">
@@ -108,8 +111,12 @@
 									</h4>
 									</div>
 
-									<div class="col-md-6">
+									<div class="col-md-5">
 									<p class="pull-left job-short-description">' . $jobname .'</p>
+									</div>
+
+									<div class="col-md-1">
+										<p style="color:red;"> Payout: ' . $jobpay . ' </p>
 									</div>
 
 									<div class="col-md-3">
@@ -135,6 +142,7 @@
 										$jobrole = $jobs_table['jobrole'];
 										$company = $jobs_table['company'];
 										$jobshortdesc = $jobs_table['jobshortdesc'];
+										$jobpay = $jobs_table['job_pay'];
 
 									echo '
 									<li><a href="">
@@ -145,8 +153,12 @@
 									</h4>
 									</div>
 
-									<div class="col-md-6">
+									<div class="col-md-5">
 									<p class="pull-left job-short-description">' . $jobname .'</p>
+									</div>
+
+									<div class="col-md-1">
+										<p style="color:red;"> Payout: ' . $jobpay . ' </p>
 									</div>
 
 									<div class="col-md-3">
@@ -172,6 +184,7 @@
 										$jobrole = $jobs_table['jobrole'];
 										$company = $jobs_table['company'];
 										$jobshortdesc = $jobs_table['jobshortdesc'];
+										$jobpay = $jobs_table['job_pay'];
 
 									echo '
 									<li><a href="">
@@ -182,8 +195,12 @@
 									</h4>
 									</div>
 
-									<div class="col-md-6">
+									<div class="col-md-5">
 									<p class="pull-left job-short-description">' . $jobname .'</p>
+									</div>
+
+									<div class="col-md-1">
+										<p style="color:red;"> Payout: ' . $jobpay . ' </p>
 									</div>
 
 									<div class="col-md-3">
