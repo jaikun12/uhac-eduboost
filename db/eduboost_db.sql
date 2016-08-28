@@ -30,7 +30,7 @@ CREATE TABLE `ongoingjobs_table` (
   `userid` int(15) NOT NULL,
   `jobid` int(15) NOT NULL,
   `per_completion` float NOT NULL,
-  `ong_timestamp` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP
+  `ong_timestamp` timestamp(6) NOT NULL
 ) ;
 
 --
