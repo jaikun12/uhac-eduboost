@@ -118,7 +118,7 @@
 									</div>
 
 									<div class="col-md-6">
-									<p class="pull-left job-short-description">' . $coj_timestamp .'</p>
+									<p class="pull-left job-short-description"> Time completed:<br>' . $coj_timestamp .'</p>
 									</div>
 
 									<div class="col-md-3">
@@ -161,7 +161,7 @@
 									</div>
 
 									<div class="col-md-6">
-									<p class="pull-left job-short-description">' . $caj_timestamp .'</p>
+									<p class="pull-left job-short-description"> Time cancelled:<br>' . $caj_timestamp .'</p>
 									</div>
 
 									<div class="col-md-3">
