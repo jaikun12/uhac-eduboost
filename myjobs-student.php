@@ -43,6 +43,36 @@
 
 					</form>
 					<br><br><hr>
+					<h5 style="margin:-12px 0 -8px 0;text-align:left;color:#EC9A1A">
+						Ongoing Jobs
+					</h5>
+					<hr>
+						<ul id="job-list" class="list-unstyled">
+							<?php 
+
+									$ongoingjobs_table_query = mysql_query("SELECT * FROM ongoingjobs_table WHERE userid = 1;");
+
+									while ($ongoingjobs_table = mysql_fetch_array($ongoingjobs_table_query)){
+										$jobid = $ongoingjobs_table['jobid'];
+										$per_completed = $ongoingjobs_table['per_completed'];
+										$ong_timestamp = $ongoingjobs_table['ong_timestamp'];
+
+									echo '</h4>
+									</div>
+									<div class="col-md-6">
+									<p class="pull-left job-short-description"> Percentage completed:<br>' . ($ong_timestamp*100) .'%</p>
+									</div>
+
+									<div class="col-md-3">
+									<img src="images/ubanklogo.png" class="comp-logo">
+
+									</div>	
+									</div></a>
+									</li>';
+										
+										// end fetch of table
+									}
+							?>
 					<h5 style="margin:-12px 0 -8px 0;text-align:left;color:#EC9A1A">Completed Jobs</h5>
 					<hr>
 						<ul id="job-list" class="list-unstyled">

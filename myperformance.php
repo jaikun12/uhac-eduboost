@@ -2,7 +2,7 @@
 <html>
 	<head>
 	<!--boaz's fucked up codes pt1 10:17am-->
-		<?php/*
+		<!--?php/*
 			include("php/dbconnect.php");
 
 			$users_query = mysql_query("SELECT * FROM users_table WHERE userid = 1;");
@@ -30,7 +30,7 @@
 				$per_completed = $result['per_completion'];
 				$ong_count += 1;
 			}
-					*/?>
+					*/?-->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand|Roboto" rel="stylesheet"> 
 		<script src="https://use.fontawesome.com/5d707990f5.js"></script>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -44,8 +44,13 @@
 
        		 var jobperf = google.visualization.arrayToDataTable([
        		   ['Jobs', 'Quantity'],
+<<<<<<< HEAD
        		   ['Completed',     5],
        		   ['Ongoing',      1],
+=======
+       		   ['Completed',     11],
+       		   ['Ongoing',      8],
+>>>>>>> d2ad5fb5d3f002cf94a4abd0b6ee50cc87e57310
        		   ['Cancelled',  2],
        		 ]);
 		

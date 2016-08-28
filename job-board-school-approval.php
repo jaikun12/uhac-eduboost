@@ -15,7 +15,7 @@
 				<li><a href="school-dash.php"><div>MY STUDENTS</div></a></li>
 				<li><a href="#"><div class="active">JOB BOARD</div></a></li>
 				<li><a href="myperformance-school.php"><div>MY PERFORMANCE</div></a></li>
-				<li><a href=""><div>LINKAGES</div></a></li>
+				<li><a href="linkages.php"><div>LINKAGES</div></a></li>
 			</ul>
 			
 			<ul class="list-inline pull-right">
