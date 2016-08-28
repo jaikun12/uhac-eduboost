@@ -2,21 +2,35 @@
 <html>
 	<head>
 	<!--boaz's fucked up codes pt1 10:17am-->
-		<?php
+		<?php/*
 			include("php/dbconnect.php");
 
 			$users_query = mysql_query("SELECT * FROM users_table WHERE userid = 1;");
 
 			$completed_query = mysql_query("SELECT * FROM completedjobs_table WHERE userid = 1;");
 
-			while (mysql_fetch_array($completed_query)){
-				
+			while ($result = mysql_num_rows($completed_query)){
+				//$jobid = $result['jobid'];
+				$success_rating = $result['success_rating'];
+				$com_count += 1;
 			}
 
 			$cancelled_query = mysql_query("SELECT * FROM cancelledjobs_table WHERE userid = 1;");
 
+			while ($result = mysql_fetch_array($cancelled_query)){
+				//$jobid = $result['jobid'];
+				$per_completed = $result['per_completed'];
+				$can_count += 1;
+			}
 
-					?>
+			$ongoing_query = mysql_query("SELECT * FROM ongoingjobs_table WHERE userid = 1;");
+
+			while ($result = mysql_fetch_array($ongoing_query)){
+				//$jobid = $result[]
+				$per_completed = $result['per_completion'];
+				$ong_count += 1;
+			}
+					*/?>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand|Roboto" rel="stylesheet"> 
 		<script src="https://use.fontawesome.com/5d707990f5.js"></script>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -30,8 +44,8 @@
 
        		 var jobperf = google.visualization.arrayToDataTable([
        		   ['Jobs', 'Quantity'],
-       		   ['Completed',     11],
-       		   ['Ongoing',      2],
+       		   ['Completed',     $com_count],
+       		   ['Ongoing',      ],
        		   ['Cancelled',  2],
        		 ]);
 		
