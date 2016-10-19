@@ -1,7 +1,14 @@
 *{
 	box-sizing:border-box;
 	z-index:1;
+	margin:0;
 }
+
+html,body{
+	/*text-shadow:0.5px 0.5px black;*/
+	margin:0;
+}
+
 
 nav{
 	padding:20px;
@@ -64,9 +71,10 @@ video#bgvid {
 }
 
 #intro{
-	margin-top:10vh;
+	margin-top:8vh;
 	font-family:'Roboto';
 	color:white;
+	max-height:100vh;
 }
 
 #intro h1{
@@ -86,4 +94,46 @@ a{
 a:hover{
 	color:#EC9A1A;
 	text-decoration:none;
+}
+
+.spacer{
+	height:300px;
+	width:100%;
+}
+
+#app-desc{
+	margin-top:200px;
+	color:white;
+	text-align:center;
+	font-family:'Open Sans';
+	/*border:solid white 2px;*/
+	padding:60px;
+	background:none;
+	margin:0;
+}
+
+#app-features{
+	margin-top:200px;
+	color:rgb(55,55,55);
+	text-align:center;
+	font-family:'Open Sans';
+	/*border:solid white 2px;*/
+	padding:60px;
+	background:rgba(255,255,255,1);
+	margin:0;
+}
+
+#app-features img{
+	width:60vw;
+}
+
+.divider{
+	margin-bottom:solid #B3B3B3 1px;
+	width:90%;
+}
+
+#app-features .logo-sm{
+	height:100px;
+	width:100px;
+	margin:25px;
 }
